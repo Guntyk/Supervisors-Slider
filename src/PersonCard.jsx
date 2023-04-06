@@ -18,11 +18,6 @@ export default function PersonCard({ person }) {
         </div>
         <p className="person-description">{person.description}</p>
       </div>
-      {/* <div className="person-photo">
-        <img src="https://api.lorem.space/image/movie?w=412&h=656" alt="" />
-        <div className="photo-back"></div>
-      </div> */}
-
       <div className="person-photo">
         <div className="person-photo-wrapper">
           <div className="photo-face photo-face--front">

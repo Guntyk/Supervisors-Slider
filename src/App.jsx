@@ -2,8 +2,8 @@ import { Navigation, Pagination, EffectFade } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useEffect, useState } from "react";
 import PersonCard from "./PersonCard";
+import { Power1, gsap } from "gsap";
 import { people } from "./data";
-import { gsap } from "gsap";
 import "./App.css";
 
 import "swiper/css";
@@ -19,7 +19,7 @@ function App() {
   function anim(e) {
     const tl = gsap.timeline({
       repeat: -1,
-      delay: 2,
+      delay: 2.1,
       repeatDelay: 0,
     });
     gsap.fromTo(
@@ -34,13 +34,15 @@ function App() {
         boxShadow: "rgba(100, 100, 111, 0.5) 0px 7px 29px 0px",
       }
     );
+    tl.resume();
     tl.to(".swiper-slide-active .person-photo", {
       duration: 2,
-      ease: easeInOut,
+      ease: Power1.easeInOut,
       y: "-53%",
     });
     tl.to(".swiper-slide-active .person-photo", {
       duration: 2,
+      ease: Power1.easeInOut,
       y: "-50%",
     });
   }

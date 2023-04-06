@@ -49,10 +49,9 @@
   width: 25%;
   height: 70vh;
   border-radius: 20px;
-  
+  transform: translateY(90%);
   transform-style: preserve-3d;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  /* transition: 2s; */
 }
 .person-photo-wrapper {
   width: 100%;
